@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:id="@+id/kakaoMapFindWayImage1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="카카오맵 실행 화면"
+        android:scaleType="fitXY"
+        android:src="@drawable/kakao_map_find_way6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 상단 어두운 배경 -->
+
+    <View
+        android:id="@+id/darkOverlayTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 텍스트 박스와 닫기 버튼을 담는 레이아웃 -->
+    <FrameLayout
+        android:id="@+id/textBoxContainer"
+        android:layout_width="314dp"
+        android:layout_height="206dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="100dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 텍스트 박스 -->
+        <TextView
+            android:id="@+id/overlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="이제 경로를 따라 걸으시면 목적지에 도착합니다"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <!-- X 버튼 -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end|top"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="닫기 버튼"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">어르신 도우미</string>
+
+<!--    MainActivity.java-->
+    <string name="main_kiosk">키오스크 사용법</string>
+    <string name="main_game">치매 예방 게임</string>
+    <string name="main_suggestion_box">건의함</string>
+
+<!--    activity_game.xml-->
+    <string name="question">Question</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="submit">제출</string>
+
+<!--    game.xml-->
+    <string name="operations_game">사칙연산 게임</string>
+    <string name="game2">게임 2</string>
+    <string name="game3">게임 3</string>
+    <string name="game4">게임 4</string>
+
+<!--    suggestion_box-->
+    <string name="title">건의 제목</string>
+    <string name="content">건의 내용</string>
 </resources>

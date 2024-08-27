@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:id="@+id/kakaoMapFindWayImage1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="카카오맵 실행 화면"
+        android:scaleType="fitXY"
+        android:src="@drawable/kakao_map_find_way5" />
+
+    <!-- 상단 어두운 배경 -->
+    <View
+        android:id="@+id/darkOverlayTop"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:layout_below="@id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#80000000" />
+
+    <!-- 하단 어두운 배경 -->
+    <View
+        android:id="@+id/darkOverlayBottom"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#80000000" />
+
+    <!-- 깜빡이는 빨간 테두리의 투명한 박스 -->
+
+    <TextView
+        android:id="@+id/newTextBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="318dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="깜빡거리는 박스를 클릭해주세요"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/rect_border_red"
+        android:contentDescription="카카오맵 실행 화면" />
+
+</RelativeLayout>

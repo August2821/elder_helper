@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오늘 점심 뭐 먹었지?"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:autofillHints="lunch"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:importantForAccessibility="yes" />
+
+    <EditText
+        android:id="@+id/et_shirt_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오늘 상의 색상은?"
+        android:layout_below="@id/et_lunch"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:autofillHints="shirtColor"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:importantForAccessibility="yes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:layout_below="@id/et_shirt_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onSubmitClick" />
+</RelativeLayout>

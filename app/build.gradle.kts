@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapplication"
-        minSdk = 24
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,4 +40,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // RenderScript 추가
+//    implementation("androidx.renderscript:renderscript:24.0.0")
+    // Glide 및 Glide Transformations 종속성 추가
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    implementation("jp.wasabeef:glide-transformations:4.3.0")
+
 }

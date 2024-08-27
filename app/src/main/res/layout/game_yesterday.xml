@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_record_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 한 일 기록하기"
+        android:layout_centerInParent="true"
+        android:onClick="onRecordTodayClick" />
+
+    <Button
+        android:id="@+id/btn_check_yesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어제 뭐했지?"
+        android:layout_below="@id/btn_record_today"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onCheckYesterdayClick" />
+</RelativeLayout>

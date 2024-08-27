@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:id="@+id/kakaoMapFindWayImage1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="카카오맵 실행 화면"
+        android:scaleType="fitXY"
+        android:src="@drawable/kakao_map_find_way1" />
+
+    <!-- 어두운 배경 -->
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <!-- 텍스트 박스와 닫기 버튼을 담는 레이아웃 -->
+    <FrameLayout
+        android:id="@+id/textBoxContainer"
+        android:layout_width="322dp"
+        android:layout_height="276dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <!-- 텍스트 박스 -->
+        <TextView
+            android:id="@+id/overlayText"
+            android:layout_width="286dp"
+            android:layout_height="242dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="저희는 스타벅스 충북대점으로 가는 방법을 알아볼게요"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <!-- X 버튼 -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end|top"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="닫기 버튼"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </FrameLayout>
+
+    <!-- 깜빡이는 빨간 테두리의 투명한 박스 -->
+    <RelativeLayout
+        android:id="@+id/redBlinkingBox"
+        android:layout_width="277dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/rect_border_red"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <!-- 입력 박스 -->
+    <EditText
+        android:id="@+id/inputBox"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="청주시 서원구 개신동"
+        android:imeOptions="actionDone"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!-- 새로운 텍스트 박스 -->
+    <TextView
+        android:id="@+id/newTextBox"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redBlinkingBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="119dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="깜빡거리는 박스를 클릭하여 &quot;스타벅스 &quot;를 입력해주세요"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:visibility="gone" />
+
+    <!-- 잘못된 입력 메시지 박스 -->
+    <TextView
+        android:id="@+id/invalidInputTextBox"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redBlinkingBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="130dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="올바른 입력이 아닙니다. 스타벅스라고 입력해주세요"
+        android:textColor="#FF0000"
+        android:textSize="34sp"
+        android:visibility="gone" />
+</RelativeLayout>

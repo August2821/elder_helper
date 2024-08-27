@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 깜빡이는 빨간 테두리의 투명한 박스 -->
+
+    <ImageView
+        android:id="@+id/kakao_map_login_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/kakao_map_login1" />
+
+    <TextView
+        android:id="@+id/newTextBox"
+        android:layout_width="354dp"
+        android:layout_height="194dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="97dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="깜빡거리는 박스를 클릭해주세요"
+        android:textColor="#000000"
+        android:textSize="48sp" />
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/rect_border_red"
+        android:contentDescription="카카오맵 실행 화면" />
+
+</RelativeLayout>

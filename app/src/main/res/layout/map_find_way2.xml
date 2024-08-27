@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:id="@+id/kakaoMapFindWayImage1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="카카오맵 실행 화면"
+        android:scaleType="fitXY"
+        android:src="@drawable/kakao_map_find_way2" />
+
+    <!-- 어두운 배경 -->
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+         />
+
+    <!-- 입력 박스 -->
+    <EditText
+        android:id="@+id/inputBox"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="도착지 검색"
+        android:imeOptions="actionDone"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="18sp" />
+
+    <!-- 깜빡이는 빨간 테두리의 투명한 박스 -->
+    <RelativeLayout
+        android:id="@+id/redBlinkingBox"
+        android:layout_width="327dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/rect_border_red" >
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/newTextBox"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redBlinkingBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="72dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="깜빡거리는 박스를 클릭하여 &quot;스타벅스&quot;를 입력해주세요"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <!-- 잘못된 입력 메시지 박스 -->
+    <TextView
+        android:id="@+id/invalidInputTextBox"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redBlinkingBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="130dp"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:text="올바른 입력이 아닙니다. 스타벅스라고 입력해주세요"
+        android:textColor="#FF0000"
+        android:textSize="34sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

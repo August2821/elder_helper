@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/kakao1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kakaotalk1" />
+
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="295dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="화면을 터치하면 설명창이 나옵니다."
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".games.color" >
+
+    <TextView
+        android:id="@+id/color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="색상 텍스트"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/correct_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="정답입니다!"
+        android:layout_below="@id/color_text"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/recognized_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correct_answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="인식된 텍스트"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="녹음 시작"
+        android:layout_below="@id/recognized_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>
