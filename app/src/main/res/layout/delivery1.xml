@@ -1,0 +1,77 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/delivery1">
+
+
+    <View
+        android:id="@+id/dark_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#40000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="318dp"
+        android:layout_height="97dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="주소를 입력하고 엔터를 누르면 다음 화면으로 넘어갑니다!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <ImageView
+        android:id="@+id/redblank3"
+        android:layout_width="391dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203"
+        app:srcCompat="@drawable/red" />
+
+    <ImageView
+        android:layout_width="381dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dark_overlay"
+        app:layout_constraintEnd_toEndOf="@+id/dark_overlay"
+        app:layout_constraintStart_toStartOf="@+id/dark_overlay"
+        app:layout_constraintTop_toTopOf="@+id/dark_overlay"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/search" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="336dp"
+        android:layout_height="43dp"
+        android:ems="14"
+        android:hint="주소를 입력하세요."
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

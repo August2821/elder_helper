@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/main_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+<!--        박주현-->
+<!--        배달앱 사용법-->
+        <activity
+            android:name=".deliverymain"
+            android:exported="false" />
+
+<!--        회원가입과 로그인-->
+        <activity
+            android:name=".delivery"
+            android:exported="false" />
+        <activity
+            android:name=".delivery1"
+            android:exported="false" />
+        <activity
+            android:name=".delivery2"
+            android:exported="false" />
+        <activity
+            android:name=".delivery3"
+            android:exported="false" />
+        <activity
+            android:name=".delivery4"
+            android:exported="false" />
+        <activity
+            android:name=".delivery5"
+            android:exported="false" />
+        <activity
+            android:name=".delivery6"
+            android:exported="false" />
+        <activity
+            android:name=".delivery7"
+            android:exported="false" />
+
+<!--        음식 주문-->
+        <activity
+            android:name=".orderfinish"
+            android:exported="false" />
+        <activity
+            android:name=".order10"
+            android:exported="false" />
+        <activity
+            android:name=".order9"
+            android:exported="false" />
+        <activity
+            android:name=".order8"
+            android:exported="false" />
+        <activity
+            android:name=".order7"
+            android:exported="false" />
+        <activity
+            android:name=".order6"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".order5"
+            android:exported="false" />
+        <activity
+            android:name=".order4"
+            android:exported="false" />
+        <activity
+            android:name=".order3"
+            android:exported="false" />
+        <activity
+            android:name=".order2"
+            android:exported="false" />
+        <activity
+            android:name=".order1"
+            android:exported="false" />
+
+<!--        김민경-->
+        <activity android:name=".map.map_main"/>
+        <activity android:name=".map.map1_login1"/>
+        <activity android:name=".map.map1_login2"/>
+        <activity android:name=".map.map1_login3"/>
+        <activity android:name=".map.map_find_way1"/>
+        <activity android:name=".map.map_find_way2"/>
+        <activity android:name=".map.map_find_way3"/>
+        <activity android:name=".map.map_find_way4"/>
+        <activity android:name=".map.map_find_way5"/>
+        <activity android:name=".map.map_find_way6"/>
+
+<!--        변소윤-->
+        <activity android:name=".phonemain"/>
+        <activity android:name=".call"/>
+        <activity android:name=".call1"/>
+        <activity android:name=".CallByType" android:exported="true"/>
+        <activity android:name=".CallByType_CallPage" android:exported="true"/>
+        <activity android:name=".CallByNum" android:exported="true"/>
+        <activity android:name=".CallByNum_plusNum" android:exported="true"/>
+        <activity android:name=".CallByNum_plused" android:exported="true"/>
+        <activity android:name=".Success" android:exported="true"/>
+        <activity android:name=".Message" android:exported="true"/>
+        <activity android:name=".Message_create" android:exported="true"/>
+        <activity android:name=".Message_create_search" android:exported="true"/>
+        <activity android:name=".Message_create_search_hong" android:exported="true"/>
+        <activity android:name=".Message_created_new_page" android:exported="true"/>
+
+
+
+
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
