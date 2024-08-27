@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".call1"
+            android:exported="false" />
+        <activity
+            android:name=".contact1"
+            android:exported="false" />
+        <activity
+            android:name=".phonemain"
+            android:exported="false" />
+        <activity
+            android:name=".mapmain"
+            android:exported="false" />
+        <activity
+            android:name=".delivery7"
+            android:exported="false" />
+        <activity
+            android:name=".orderfinish"
+            android:exported="false" />
+        <activity
+            android:name=".order10"
+            android:exported="false" />
+        <activity
+            android:name=".order9"
+            android:exported="false" />
+        <activity
+            android:name=".order8"
+            android:exported="false" />
+        <activity
+            android:name=".order7"
+            android:exported="false" />
+        <activity
+            android:name=".order6"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".order5"
+            android:exported="false" />
+        <activity
+            android:name=".order4"
+            android:exported="false" />
+        <activity
+            android:name=".order3"
+            android:exported="false" />
+        <activity
+            android:name=".order2"
+            android:exported="false" />
+        <activity
+            android:name=".order1"
+            android:exported="false" />
+        <activity
+            android:name=".delivery6"
+            android:exported="false" />
+        <activity
+            android:name=".delivery5"
+            android:exported="false" />
+        <activity
+            android:name=".delivery4"
+            android:exported="false" />
+        <activity
+            android:name=".deliverymain"
+            android:exported="false" />
+        <activity
+            android:name=".delivery3"
+            android:exported="false" />
+        <activity
+            android:name=".delivery2"
+            android:exported="false" />
+        <activity
+            android:name=".delivery1"
+            android:exported="false" />
+        <activity
+            android:name=".delivery"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
