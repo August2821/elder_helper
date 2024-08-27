@@ -1,0 +1,111 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message">
+
+    <EditText
+        android:id="@+id/phone_page_theme_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="@string/휴대전화_기본_사용법"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:autofillHints="username"
+        android:hint="@string/휴대전화_기본_사용법"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/phone_page_call_button"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/phone_page_call_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#FF9800"
+        android:text="@string/연락"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/phone_page_setting_button"
+        app:layout_constraintEnd_toStartOf="@id/phone_page_internet_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_theme_text" />
+
+    <Button
+        android:id="@+id/phone_page_internet_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/인터넷"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/phone_page_call_button"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_theme_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/phone_page_tool_button" />
+
+    <Button
+        android:id="@+id/phone_page_setting_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/설정관리"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_call_button"
+        app:layout_constraintEnd_toStartOf="@id/phone_page_tool_button"
+        app:layout_constraintBottom_toTopOf="@id/phone_page_picture_button" />
+
+    <Button
+        android:id="@+id/phone_page_tool_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/도구"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/phone_page_setting_button"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_internet_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/phone_page_extra_button" />
+
+    <Button
+        android:id="@+id/phone_page_picture_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#009688"
+        android:text="@string/사진"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_setting_button"
+        app:layout_constraintEnd_toStartOf="@id/phone_page_extra_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/phone_page_extra_button"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/기타"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/phone_page_picture_button"
+        app:layout_constraintTop_toBottomOf="@id/phone_page_tool_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

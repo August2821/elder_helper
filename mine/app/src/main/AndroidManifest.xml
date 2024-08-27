@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mine">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mine"
+        tools:targetApi="31">
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Call" android:exported="true"/>
+        <activity android:name=".CallByType" android:exported="true"/>
+        <activity android:name=".CallChoices" android:exported="true"/>
+        <activity android:name=".CallByType_CallPage" android:exported="true"/>
+        <activity android:name=".CallByNum" android:exported="true"/>
+        <activity android:name=".CallByNum_plusNum" android:exported="true"/>
+        <activity android:name=".CallByNum_plused" android:exported="true"/>
+        <activity android:name=".Success" android:exported="true"/>
+        <activity android:name=".Message" android:exported="true"/>
+        <activity android:name=".Message_create" android:exported="true"/>
+        <activity android:name=".Message_create_search" android:exported="true"/>
+        <activity android:name=".Message_create_search_hong" android:exported="true"/>
+        <activity android:name=".Message_created_new_page" android:exported="true"/>
+
+    </application>
+
+</manifest>

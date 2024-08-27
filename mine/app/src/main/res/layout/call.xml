@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call">
+
+    <!-- EditText는 상단에 위치 -->
+    <EditText
+        android:id="@+id/call_page_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/전화기능"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:autofillHints="phone"
+        android:hint="전화기능"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- 버튼 1 -->
+    <Button
+        android:id="@+id/call_page_call_button"
+        android:layout_width="281dp"
+        android:layout_height="161dp"
+        android:layout_margin="8dp"
+        android:text="@string/전화"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/call_page_message_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_page_title_text" />
+
+    <!-- 버튼 2 -->
+    <Button
+        android:id="@+id/call_page_message_button"
+        android:layout_width="290dp"
+        android:layout_height="146dp"
+        android:layout_margin="8dp"
+        android:text="@string/메시지"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_page_call_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

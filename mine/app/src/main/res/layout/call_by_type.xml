@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_background"
+    tools:context=".CallByType">
+
+    <!-- 번호 표시 텍스트 -->
+
+    <EditText
+        android:id="@+id/call_by_type_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:autofillHints="phone"
+        android:ems="20"
+        android:enabled="false"
+        android:hint="전화번호 입력"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- 버튼 배치 -->
+
+    <GridLayout
+        android:id="@+id/button_grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/call_by_type_button_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_by_type_display">
+
+        <!-- 각 버튼의 크기와 간격 조정 -->
+        <Button
+            android:id="@+id/call_by_type_button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 1" />
+
+        <Button
+            android:id="@+id/call_by_type_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 2" />
+
+        <Button
+            android:id="@+id/call_by_type_button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 3" />
+
+        <Button
+            android:id="@+id/call_by_type_button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 4" />
+
+        <Button
+            android:id="@+id/call_by_type_button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 5" />
+
+        <Button
+            android:id="@+id/call_by_type_button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 6" />
+
+        <Button
+            android:id="@+id/call_by_type_button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 7" />
+
+        <Button
+            android:id="@+id/call_by_type_button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 8" />
+
+        <Button
+            android:id="@+id/call_by_type_button9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 9" />
+
+        <Button
+            android:id="@+id/call_by_type_button_star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="별표 버튼" />
+
+        <Button
+            android:id="@+id/call_by_type_button0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="버튼 0" />
+
+        <Button
+            android:id="@+id/call_by_type_button_shap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="#00ff0000"
+            android:contentDescription="샵 버튼" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/call_by_type_button_call"
+        android:layout_width="84dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="56dp"
+        android:contentDescription="통화 버튼"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/call_by_type_delete"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_grid" />
+
+    <Button
+        android:id="@+id/call_by_type_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="삭제 버튼"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/button_grid"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <Button
+        android:id="@+id/call_by_type_video_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:contentDescription="영상통화 버튼"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/call_by_type_button_call"
+        app:layout_constraintTop_toBottomOf="@+id/button_grid"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="287dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="32dp"
+        android:text="홍길동: 010-2374-0802"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/call_by_type_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
